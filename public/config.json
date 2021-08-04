@@ -23,7 +23,7 @@
                     "phoneNumber": "{{Contact.Default.PhoneNumber}}"
         }],
           "outArguments": [],
-          "url": "https://custom-act-test.herokuapp.com/journeybuilder/execute",
+          "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -34,22 +34,22 @@
     },
     "configurationArguments": {
       "save": {
-        "url": "https://custom-act-test.herokuapp.com/journeybuilder/save",
+        "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://custom-act-test.herokuapp.com/journeybuilder/publish",
+        "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://custom-act-test.herokuapp.com/journeybuilder/stop",
+        "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://custom-act-test.herokuapp.com/journeybuilder/validate",
+        "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }

@@ -15,7 +15,13 @@
     },
     "arguments": {
         "execute": {
-           "inArguments":[],
+           "inArguments":[ 
+                {
+                    "emailAddress": "{{InteractionDefaults.Email}}"
+                },
+                {
+                    "phoneNumber": "{{Contact.Default.PhoneNumber}}"
+        }],
           "outArguments": [],
           "url": "https://sfmc-sms.azurewebsites.net/journeybuilder/execute",
            "verb": "POST",
@@ -61,7 +67,21 @@
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [],
+                "inArguments": [
+                    {
+                    "phoneNumber": {
+                      "dataType": "Phone",
+                      "isNullable": false,
+                      "direction": "in"
+                    }
+                  },
+                  {
+                    "emailAddress": {
+                      "dataType": "Email",
+                      "isNullable": false,
+                      "direction": "in"
+                    }
+          }],
                 "outArguments": []
             }
         }
